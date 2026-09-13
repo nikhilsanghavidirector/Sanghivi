@@ -1,0 +1,10 @@
+Put director photographs in THIS folder.
+
+Recommended: portrait orientation, about 800 x 1000 pixels, .jpg format.
+Name them: director-01.jpg, director-02.jpg, director-03.jpg, ...
+
+Then open directors.html and, for each director, set the image filename,
+the name (<h3>) and the designation (<p>). See README.md for full steps.
+
+Until a real photo is added, each card shows an elegant gold placeholder
+silhouette automatically — nothing will look broken.
