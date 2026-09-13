@@ -1,4 +1,8 @@
 import { defineConfig } from 'vite';
+import { readdirSync } from 'fs';
+
+const htmlPages = readdirSync('.')
+  .filter(f => f.endsWith('.html'));
 
 export default defineConfig({
   root: '.',
@@ -10,9 +14,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
+      input: htmlPages,
     },
   },
 });
